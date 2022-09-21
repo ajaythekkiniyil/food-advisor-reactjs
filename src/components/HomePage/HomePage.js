@@ -5,7 +5,7 @@ function HomePage() {
     const [restaurantsObj, setRestaurantsObj] = useState([])
     const [filterValue, setfilterValue] = useState(false)
     const apiEndPoint = 'https://food-advisor-plrvc.ondigitalocean.app/api/restaurants?fields=name,description&populate=image,categories'
-    const imagePath = 'https://food-advisor-plrvc.ondigitalocean.app/'
+    const imagePath = 'https://food-advisor-plrvc.ondigitalocean.app'
     useEffect(() => {
         const checked = document.getElementById('filter-all').checked =true
         axios.get(apiEndPoint)
